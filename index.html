@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px;
+        gap: 10px;
+        background-color: rgb(41, 38, 38);
+        
+        
+    
+    }
+    .box{
+        background-color: blueviolet;
+        border: 3px solid black;
+        border-radius: 10px;
+    
+        
+    }
+    .header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: green;
+        text-align: center;
+
+    }
+    .sidebar{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: rgb(13, 51, 9);
+        text-align: center;
+    }
+    .box1{
+        background-color: rgb(168, 26, 133);
+        text-align: center;
+       
+    }
+    .box2{
+       
+        background-color: rgb(77, 12, 12);
+        text-align: center;
+    }
+    .box3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: rgb(194, 119, 58);
+        text-align: center;
+    }
+    .footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: rgb(73, 9, 18);
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box header">header</div>
+        <div class="box sidebar">sidebar</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box footer">footer</div>
+    </div>
+</body>
+</html>
